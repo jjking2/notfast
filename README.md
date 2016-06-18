@@ -1,11 +1,11 @@
 # Notorious F.A.S.T.
 
-high-speed, high-volume big data plumbing engine
+High-speed, high-volume big data plumbing engine
 
 ## Concept code
 
-Download source code in notfast-concept-code.zip to get idea of the architecture of NotFast.
-Working code may be added directly to the repository in a near future.
+Download source code in notfast-concept-code.zip to get idea of the architecture of Notorious Fast. 
+Working code may be added a branch in this the repository in a near future.
 
 ## Presentation
 
@@ -13,6 +13,22 @@ See the introduction slides in English and Japanese.
 
 - NotFastIntro-ja.pptx
 - NotFastIntro-en.pptx
+
+## About
+
+Notorious FAST is a generous purpose data receiver, organizer and saver designed to handle high-speed high-volume data.
+It accepts data very fast and let an application display the data quickly.
+
+Here is how it works:
+
+- A number of queues are set up to receive data.
+- A queue handler thread reads from a queue data and spawn a worker thread.
+- A piece of data can contain high-priority and normal-priority items.
+- High-priority items are immediately sent to display applications through UDP multicast.
+- Normal-priority items are saved to a data store.
+- A display app reads the rest of data from the data storage when it needs it.
+
+More contens will come soon.
 
 Thank you.
 

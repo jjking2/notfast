@@ -4,7 +4,7 @@ high-speed, high-volume big data plumbing engine
 
 ## Concept code
 
-Download source code in notfast-concept-code.zip to get the source code.  
+Download source code in notfast-concept-code.zip to get idea of the architecture of NotFast.
 Working code may be added directly to the repository in a near future.
 
 ## Presentation
